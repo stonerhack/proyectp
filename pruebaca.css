@@ -1,0 +1,164 @@
+
+body{
+    background-color: #777777;
+    font: inherit;
+    color: #777777;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color:#00000017;
+}
+
+nav{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.navegacion{
+    width: 100%;
+    background: #000000; 
+
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    width: 1000px;
+    display: flex;
+    flex-wrap:wrap ;
+    height: 90px;
+}
+
+.menu li a{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li{
+    flex-basis: 0;
+    flex-grow: 1;
+    border-right: 1px solid #000000;
+    position: relative;
+}
+
+
+.menu li a .text-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    top: 0%;
+    font: inherit;
+
+    position: absolute;
+    z-index: 10;
+
+    transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+}
+
+.menu li a .down-item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    top: 0%;
+
+    transition: all 400ms cubic-bezier(0.160, 0.765, 0.355, 1.000); 
+
+    transition-timing-function: cubic-bezier(0.160, 0.765, 0.355, 1.000); 
+}
+
+.menu .first-item{
+    border-left: 1px solid rgba(0,0,0,0.8);
+}
+
+.menu li:hover .down-item, .menu li:hover .text-item{
+    top: 100%;
+    height: 115%;
+}
+
+/*tarjeta*/
+html, body{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6; 
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px; 
+    font-weight: 100;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    color: #ffffff;
+}
+
+.container .card{
+    width: 550px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px rgb(73, 69, 72); 
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 18px 16px rgb(222, 83, 182);
+}
+
+.container .card lag{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}

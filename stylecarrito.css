@@ -1,0 +1,87 @@
+body{
+    background-color: #777777;
+    color:#777777;
+}
+
+h4{
+    color: white;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#container {
+    border: solid 3px #000000;
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+
+  #form_button {
+    background: none;
+    border: solid 2px #000000;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  #form_button:hover {
+    background: #474544;
+    color: #F2F3EB;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #container {
+      margin: 20px auto;
+      width: 95%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 26px;
+    }
+    
+    .underline {
+      width: 68px;
+    }
+    
+    #form_button {
+      padding: 15px 25px;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    h1 {
+      font-size: 18px;
+    }
+    
+    .icon {
+      height: 35px;
+      width: 35px;
+    }
+    
+    .underline {
+      width: 53px;
+    }
+    
+    input[type='text'], [type='email'],[type='password'], select, textarea {
+      font-size: 0.875em;
+    }
+  }
